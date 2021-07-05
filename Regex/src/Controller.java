@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
+/**
+ The class in which data entry is controlled
+ */
+
 public class Controller {
     private View view;
     private Model model;

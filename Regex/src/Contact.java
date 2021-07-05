@@ -1,3 +1,6 @@
+/**
+Class with contact descriptions
+ */
 public class Contact {
     private String surname;
     private String nickname;

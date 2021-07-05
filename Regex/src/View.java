@@ -1,3 +1,6 @@
+/**
+ * This class displays information in the console
+ */
 public class View {
     public static final String ENTER_SURNAME = "Enter surname:";
     public static final String ENTER_NICKNAME = "Enter nickname:";
