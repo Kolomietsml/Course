@@ -27,6 +27,7 @@ public class View {
     public void printErrorMessage(String message) {
         printMessage(printConcatenation(
                 BUNDLE.getString(TextConstant.ERROR),
+                "\n",
                 BUNDLE.getString(message)));
     }
 

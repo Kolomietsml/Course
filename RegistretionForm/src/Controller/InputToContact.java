@@ -19,12 +19,13 @@ public class InputToContact {
     public void inputContact (){
         InputVerificationController inputVerificationController = new InputVerificationController(view,scanner);
         String regexSurname, regexNickName;
-        if (View.BUNDLE.getLocale().equals("ua")) {
-            regexSurname = RegexContainer.REGEX_UA_SURNAME;
-            regexNickName = RegexContainer.REGEX_UA_NICKNAME;
-        } else {
+        String str = String.valueOf(View.BUNDLE.getLocale());
+        if (str.equals("en_US")) {
             regexSurname = RegexContainer.REGEX_EN_SURNAME;
             regexNickName = RegexContainer.REGEX_EN_NICKNAME;
+        } else {
+            regexSurname = RegexContainer.REGEX_UA_SURNAME;
+            regexNickName = RegexContainer.REGEX_UA_NICKNAME;
         }
         contact.setSurname(inputVerificationController.checkInput(TextConstant.ENTER_SURNAME, regexSurname));
         contact.setNickname(inputVerificationController.checkInput(TextConstant.ENTER_NICKNAME, regexNickName));
