@@ -1,3 +1,5 @@
+package View;
+
 /**
  * This class displays information in the console
  */

@@ -1,3 +1,5 @@
+package Model;
+
 /**
 Class with contact descriptions
  */
@@ -41,7 +43,7 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
+        return "Model.Contact{" +
                 "surname='" + surname + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +

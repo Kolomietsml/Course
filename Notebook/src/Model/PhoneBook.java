@@ -1,3 +1,7 @@
+package Model;
+
+import Model.Contact;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +26,7 @@ public class PhoneBook {
 
     @Override
     public String toString() {
-        return "PhoneBook{" +
+        return "Model.PhoneBook{" +
                 "contacts=" + contacts +
                 '}';
     }

@@ -1,3 +1,7 @@
+package Controller;
+
+import Model.Model;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 
