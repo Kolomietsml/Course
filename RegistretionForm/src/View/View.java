@@ -1,18 +1,38 @@
 package View;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 /**
  * This class displays information in the console
  */
 public class View {
-    public static final String ENTER_SURNAME = "Enter surname:";
-    public static final String ENTER_NICKNAME = "Enter nickname:";
-    public static final String ENTER_EMAIL = "Enter email";
-    public static final String ERROR = "Incorrect input enter again";
-    public static final String EXIT = "For exit enter 'e'. if you want to continue click any button.";
-    public static final String ALL_CONTACTS = "Your contacts: ";
+    static String BUNDLE_MESSAGE_NAME = "message";
+    static Locale uaLocale = new Locale("ua", "UA");
+//        static Locale usLocale = new Locale("en", "US");
+    public static final ResourceBundle BUNDLE = ResourceBundle.getBundle(BUNDLE_MESSAGE_NAME, uaLocale);
 
-    public void printMessage(String message){
+    public void printMessage(String message) {
         System.out.println(message);
     }
+
+    public String printConcatenation(String... message) {
+        StringBuilder concatenation = new StringBuilder();
+        for (String st : message) {
+            concatenation = concatenation.append(st);
+        }
+        return new String(concatenation.toString());
+    }
+
+    public void printErrorMessage(String message) {
+        printMessage(printConcatenation(
+                BUNDLE.getString(TextConstant.ERROR),
+                BUNDLE.getString(message)));
+    }
+
+    public void printInputMessage(String message){
+        printMessage(BUNDLE.getString(message));
+    }
+
 
 }

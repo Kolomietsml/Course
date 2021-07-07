@@ -3,7 +3,7 @@ package Model;
 /**
 Class with contact descriptions
  */
-public class Contact {
+public class Contact extends Entity{
     private String surname;
     private String nickname;
     private String email;
