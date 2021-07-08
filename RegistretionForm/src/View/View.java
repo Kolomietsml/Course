@@ -8,9 +8,9 @@ import java.util.ResourceBundle;
  */
 public class View {
     static String BUNDLE_MESSAGE_NAME = "message";
-    static Locale uaLocale = new Locale("ua", "UA");
-//        static Locale usLocale = new Locale("en", "US");
-    public static final ResourceBundle BUNDLE = ResourceBundle.getBundle(BUNDLE_MESSAGE_NAME, uaLocale);
+//    static Locale uaLocale = new Locale("ua", "UA");
+        static Locale usLocale = new Locale("en", "US");
+    public static final ResourceBundle BUNDLE = ResourceBundle.getBundle(BUNDLE_MESSAGE_NAME, usLocale);
 
     public void printMessage(String message) {
         System.out.println(message);

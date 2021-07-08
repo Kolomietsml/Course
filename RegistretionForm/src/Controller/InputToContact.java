@@ -33,5 +33,7 @@ public class InputToContact {
         view.printMessage(contact.toString());
     }
 
-
+    public Contact getContact() {
+        return contact;
+    }
 }
