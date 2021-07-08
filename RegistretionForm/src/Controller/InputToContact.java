@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Contact;
+import Model.Entity.Contact;
 import View.*;
 
 import java.util.Scanner;

@@ -1,9 +1,9 @@
-package Model;
+package Model.Entity;
 
 /**
 Class with contact descriptions
  */
-public class Contact extends Entity{
+public class Contact {
     private String surname;
     private String nickname;
     private String email;
@@ -43,7 +43,7 @@ public class Contact extends Entity{
 
     @Override
     public String toString() {
-        return "Model.Contact{" +
+        return "Model.Entity.Contact{" +
                 "surname='" + surname + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +

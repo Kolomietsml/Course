@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Entity.Contact;
+
 public class Model {
     private Contact contact;
 
