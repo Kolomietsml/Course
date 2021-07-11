@@ -4,7 +4,7 @@ import java.util.Objects;
  * it is an immutable object
  */
 
-public class University {
+public final class University {
 
     private final String name;
     private final int numberCampuses;

@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public final class Student {
+public class Student {
     private String name;
     private int age;
     private String group;
